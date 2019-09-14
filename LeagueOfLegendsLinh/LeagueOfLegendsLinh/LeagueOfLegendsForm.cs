@@ -29,7 +29,7 @@ namespace LeagueOfLegendsLinh
 
         private void Label1_Click(object sender, EventArgs e)
         {
-
+          
         }
 
         private void Label1_Click_1(object sender, EventArgs e)
@@ -50,10 +50,13 @@ namespace LeagueOfLegendsLinh
         private void MniGraves_Click(object sender, EventArgs e)
         {
             // change the character text to Graves
-            this.lblCharacter.Text = " Graves ";
+            lblCharacter.Text = " Graves ";
 
             // change the character type of fighter to Melee
-            this.lblType.Text = " Melee ";
+            lblType.Text = " Melee ";
+
+            // change the font
+            lblCharacter.Font = new Font("Source Sans Pro", 40F);
         }
 
         private void HecarimToolStripMenuItem_Click(object sender, EventArgs e)

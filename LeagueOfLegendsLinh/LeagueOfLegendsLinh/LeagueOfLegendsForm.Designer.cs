@@ -31,12 +31,12 @@
             this.mnuLeagueOfLegends = new System.Windows.Forms.MenuStrip();
             this.mniLeagueOfLegends = new System.Windows.Forms.ToolStripMenuItem();
             this.mniGraves = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniKaisa = new System.Windows.Forms.ToolStripMenuItem();
             this.mniHecarim = new System.Windows.Forms.ToolStripMenuItem();
             this.mniVi = new System.Windows.Forms.ToolStripMenuItem();
-            this.mniKaisa = new System.Windows.Forms.ToolStripMenuItem();
             this.grbList = new System.Windows.Forms.GroupBox();
-            this.lblCharacter = new System.Windows.Forms.Label();
             this.lblType = new System.Windows.Forms.Label();
+            this.lblCharacter = new System.Windows.Forms.Label();
             this.mnuLeagueOfLegends.SuspendLayout();
             this.grbList.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +69,15 @@
             this.mniGraves.Text = "Graves";
             this.mniGraves.Click += new System.EventHandler(this.MniGraves_Click);
             // 
+            // mniKaisa
+            // 
+            this.mniKaisa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.mniKaisa.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mniKaisa.Name = "mniKaisa";
+            this.mniKaisa.Size = new System.Drawing.Size(180, 22);
+            this.mniKaisa.Text = "Kaisa";
+            this.mniKaisa.Click += new System.EventHandler(this.KaisaToolStripMenuItem_Click);
+            // 
             // mniHecarim
             // 
             this.mniHecarim.Name = "mniHecarim";
@@ -83,15 +92,6 @@
             this.mniVi.Text = "Vi";
             this.mniVi.Click += new System.EventHandler(this.ViToolStripMenuItem_Click);
             // 
-            // mniKaisa
-            // 
-            this.mniKaisa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.mniKaisa.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mniKaisa.Name = "mniKaisa";
-            this.mniKaisa.Size = new System.Drawing.Size(180, 22);
-            this.mniKaisa.Text = "Kaisa";
-            this.mniKaisa.Click += new System.EventHandler(this.KaisaToolStripMenuItem_Click);
-            // 
             // grbList
             // 
             this.grbList.Controls.Add(this.lblType);
@@ -104,17 +104,6 @@
             this.grbList.Text = "Favourites";
             this.grbList.Enter += new System.EventHandler(this.GrbList_Enter);
             // 
-            // lblCharacter
-            // 
-            this.lblCharacter.AutoSize = true;
-            this.lblCharacter.Font = new System.Drawing.Font("RomanT", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCharacter.Location = new System.Drawing.Point(26, 46);
-            this.lblCharacter.Name = "lblCharacter";
-            this.lblCharacter.Size = new System.Drawing.Size(310, 91);
-            this.lblCharacter.TabIndex = 2;
-            this.lblCharacter.Text = "Graves";
-            this.lblCharacter.Click += new System.EventHandler(this.Label1_Click);
-            // 
             // lblType
             // 
             this.lblType.AutoSize = true;
@@ -125,6 +114,17 @@
             this.lblType.TabIndex = 3;
             this.lblType.Text = "Melee";
             this.lblType.Click += new System.EventHandler(this.Label1_Click_1);
+            // 
+            // lblCharacter
+            // 
+            this.lblCharacter.AutoSize = true;
+            this.lblCharacter.Font = new System.Drawing.Font("Impact", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCharacter.Location = new System.Drawing.Point(26, 46);
+            this.lblCharacter.Name = "lblCharacter";
+            this.lblCharacter.Size = new System.Drawing.Size(214, 80);
+            this.lblCharacter.TabIndex = 2;
+            this.lblCharacter.Text = "Graves";
+            this.lblCharacter.Click += new System.EventHandler(this.Label1_Click);
             // 
             // frmLeagueOfLegends
             // 
