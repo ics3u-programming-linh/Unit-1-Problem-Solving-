@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Created by: Linh Ho
+ * Created on: September 16th, 2019
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #7 - Social Medias
+ * This program displays a social media, user count
+ * and an image of their logo
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -55,6 +64,9 @@ namespace SocialMediasLinhH
 
             // Change the position of Instagram
             lblSocialMedia.Location = new Point(94,65);
+
+            // Change the background image to Instagram
+            picSocialMedia.Image = Properties.Resources.Instagram;
         }
 
         private void MniSnapchat_Click(object sender, EventArgs e)
@@ -66,10 +78,13 @@ namespace SocialMediasLinhH
             lblUsers.Text = "188 Million";
 
             // Change the font
-            lblSocialMedia.Font = new Font("Source Sans Pro", 40);
+            lblSocialMedia.Font = new Font("MV Boli", 40);
 
-            // Change the position of Instagram
+            // Change the position of Snapchat
             lblSocialMedia.Location = new Point(94, 65);
+
+            // Change the background image to Snapchat
+            picSocialMedia.Image = Properties.Resources.Snapchat;
         }
 
         private void MniFacebook_Click(object sender, EventArgs e)
@@ -83,8 +98,11 @@ namespace SocialMediasLinhH
             // Change the font
             lblSocialMedia.Font = new Font("Arial", 40);
 
-            // Change the position of Instagram
+            // Change the position of Facebook
             lblSocialMedia.Location = new Point(94, 65);
+
+            // Change the background image to Facebook
+            picSocialMedia.Image = Properties.Resources.facebook;
         }
 
         private void MniTwitter_Click(object sender, EventArgs e)
@@ -98,8 +116,11 @@ namespace SocialMediasLinhH
             // Change the font
             lblSocialMedia.Font = new Font("Sitka Text", 40);
 
-            // Change the position of Instagram
+            // Change the position of Twitter
             lblSocialMedia.Location = new Point(94, 65);
+
+            // Change the background image to Twitter
+            picSocialMedia.Image = Properties.Resources.twitter;
         }
     }
 }

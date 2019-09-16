@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mniSocialMedias = new System.Windows.Forms.ToolStripMenuItem();
             this.mniInstagram = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,10 +38,10 @@
             this.lblUsers = new System.Windows.Forms.Label();
             this.lblSocialMedia = new System.Windows.Forms.Label();
             this.grbSocialMedias = new System.Windows.Forms.GroupBox();
-            this.imgSocialMedia = new System.Windows.Forms.PictureBox();
+            this.picSocialMedia = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.grbSocialMedias.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSocialMedia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSocialMedia)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -69,28 +68,28 @@
             // mniInstagram
             // 
             this.mniInstagram.Name = "mniInstagram";
-            this.mniInstagram.Size = new System.Drawing.Size(180, 22);
+            this.mniInstagram.Size = new System.Drawing.Size(127, 22);
             this.mniInstagram.Text = "Instagram";
             this.mniInstagram.Click += new System.EventHandler(this.MniInstagram_Click);
             // 
             // mniSnapchat
             // 
             this.mniSnapchat.Name = "mniSnapchat";
-            this.mniSnapchat.Size = new System.Drawing.Size(180, 22);
+            this.mniSnapchat.Size = new System.Drawing.Size(127, 22);
             this.mniSnapchat.Text = "Snapchat";
             this.mniSnapchat.Click += new System.EventHandler(this.MniSnapchat_Click);
             // 
             // mniFacebook
             // 
             this.mniFacebook.Name = "mniFacebook";
-            this.mniFacebook.Size = new System.Drawing.Size(180, 22);
+            this.mniFacebook.Size = new System.Drawing.Size(127, 22);
             this.mniFacebook.Text = "Facebook";
             this.mniFacebook.Click += new System.EventHandler(this.MniFacebook_Click);
             // 
             // mniTwitter
             // 
             this.mniTwitter.Name = "mniTwitter";
-            this.mniTwitter.Size = new System.Drawing.Size(180, 22);
+            this.mniTwitter.Size = new System.Drawing.Size(127, 22);
             this.mniTwitter.Text = "Twitter";
             this.mniTwitter.Click += new System.EventHandler(this.MniTwitter_Click);
             // 
@@ -127,7 +126,7 @@
             // 
             // grbSocialMedias
             // 
-            this.grbSocialMedias.Controls.Add(this.imgSocialMedia);
+            this.grbSocialMedias.Controls.Add(this.picSocialMedia);
             this.grbSocialMedias.Controls.Add(this.lblSocialMedia);
             this.grbSocialMedias.Controls.Add(this.lblUsers);
             this.grbSocialMedias.Controls.Add(this.lblSocialMedias);
@@ -139,15 +138,15 @@
             this.grbSocialMedias.Text = "Social Platform";
             this.grbSocialMedias.Enter += new System.EventHandler(this.GrbSocialMedias_Enter);
             // 
-            // imgSocialMedia
+            // picSocialMedia
             // 
-            this.imgSocialMedia.Image = ((System.Drawing.Image)(resources.GetObject("imgSocialMedia.Image")));
-            this.imgSocialMedia.Location = new System.Drawing.Point(447, 61);
-            this.imgSocialMedia.Name = "imgSocialMedia";
-            this.imgSocialMedia.Size = new System.Drawing.Size(275, 194);
-            this.imgSocialMedia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgSocialMedia.TabIndex = 2;
-            this.imgSocialMedia.TabStop = false;
+            this.picSocialMedia.Image = global::SocialMediasLinhH.Properties.Resources.dl;
+            this.picSocialMedia.Location = new System.Drawing.Point(422, 54);
+            this.picSocialMedia.Name = "picSocialMedia";
+            this.picSocialMedia.Size = new System.Drawing.Size(286, 168);
+            this.picSocialMedia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSocialMedia.TabIndex = 3;
+            this.picSocialMedia.TabStop = false;
             // 
             // Form1
             // 
@@ -164,7 +163,7 @@
             this.menuStrip1.PerformLayout();
             this.grbSocialMedias.ResumeLayout(false);
             this.grbSocialMedias.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSocialMedia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSocialMedia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,7 +181,7 @@
         private System.Windows.Forms.Label lblUsers;
         private System.Windows.Forms.Label lblSocialMedia;
         private System.Windows.Forms.GroupBox grbSocialMedias;
-        private System.Windows.Forms.PictureBox imgSocialMedia;
+        private System.Windows.Forms.PictureBox picSocialMedia;
     }
 }
 
