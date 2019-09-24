@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace PizzaCostLinhH
 {
-    static class Program
+    static class PizzaCost
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace PizzaCostLinhH
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PizzaCostForm());
+            Application.Run(new frmPizzaCost());
         }
     }
 }
