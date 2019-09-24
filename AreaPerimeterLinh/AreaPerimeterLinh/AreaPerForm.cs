@@ -43,7 +43,7 @@ namespace AreaPerimeterLinh
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
-            // deckare local variables
+            // declare local variables
             double length, width, perimeter, area;
 
             // convert the string fro each text box to a double 
@@ -52,7 +52,7 @@ namespace AreaPerimeterLinh
 
             // calculate the area and the perimeter
             area = length * width;
-            perimeter = 2 * length * 2 * width;
+            perimeter = length + length + width + width;
 
             // insert the area and the perimeter into their respective labels
             this.lblAreaAnswer.Text = Convert.ToString(area) + " squared meters ";
